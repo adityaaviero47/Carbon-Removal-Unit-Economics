@@ -1,0 +1,5 @@
+pathway,credited_tco2e_per_acre_yr,price_usd_t,revenue_usd_acre,farmer_inr_acre,developer_margin_usd_acre,developer_margin_usd_t,years_to_first_issuance,pv_margin_usd_acre,p_margin_positive
+Biochar (cotton stalk),0.375,150.0,56.28,,2.63,7.0,1.0,2.35,0.6923
+Enhanced rock weathering,1.458,352.0,513.22,,116.64,80.0,2.0,92.98,0.8558
+Agroforestry (ARR),2.669,20.44,54.55,2565,22.28,8.35,2.18,17.4,0.99585
+Regen-ag soil carbon,0.808,21.5,17.37,817,3.69,4.56,2.18,2.88,0.9004

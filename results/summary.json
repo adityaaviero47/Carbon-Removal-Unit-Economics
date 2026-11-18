@@ -1,0 +1,225 @@
+{
+  "base_case": {
+    "biochar": {
+      "credited_t_acre": 0.3752,
+      "revenue_acre": 56.2843,
+      "margin_t": 7.0,
+      "margin_acre": 2.6266,
+      "margin_pct": 0.0467,
+      "co2e_per_t_biochar": 2.1817,
+      "biochar_t_acre": 0.172,
+      "pv": 0.8929,
+      "farmer_income_acre_inr": null,
+      "pv_margin_acre": 2.3452,
+      "value_lost_to_wait": 0.1071
+    },
+    "erw": {
+      "credited_t_acre": 1.458,
+      "revenue_acre": 513.216,
+      "margin_t": 80.0,
+      "margin_acre": 116.64,
+      "margin_pct": 0.2273,
+      "pv": 0.7972,
+      "farmer_income_acre_inr": null,
+      "pv_margin_acre": 92.9847,
+      "value_lost_to_wait": 0.2028
+    },
+    "arr": {
+      "credited_t_acre": 2.669,
+      "revenue_acre": 54.5544,
+      "margin_t": 8.3466,
+      "margin_acre": 22.2772,
+      "margin_pct": 0.4083,
+      "pv": 0.7811,
+      "farmer_income_acre_inr": 2565.4188,
+      "farmer_income_acre_usd": 27.2772,
+      "pv_margin_acre": 17.4006,
+      "value_lost_to_wait": 0.2189
+    },
+    "soil": {
+      "credited_t_acre": 0.808,
+      "revenue_acre": 17.372,
+      "margin_t": 4.5619,
+      "margin_acre": 3.686,
+      "margin_pct": 0.2122,
+      "pv": 0.7811,
+      "farmer_income_acre_inr": 816.9183,
+      "farmer_income_acre_usd": 8.686,
+      "pv_margin_acre": 2.8791,
+      "value_lost_to_wait": 0.2189
+    }
+  },
+  "dose_check": {
+    "soil_t_ha": 2100.0,
+    "dose_t_ha": 42.0,
+    "supply_t_ha_yr": 0.425,
+    "years_of_own_stalk": 98.8235,
+    "dose_tco2e_ha": 91.63
+  },
+  "registration_delay": {
+    "pv_india_median": 0.781,
+    "pv_roa_median": 0.8525,
+    "pv_india_q3": 0.5919,
+    "pv_roa_q3": 0.8241,
+    "loss_median": 0.0838,
+    "loss_q3": 0.2818
+  },
+  "monte_carlo": {
+    "biochar": {
+      "p_margin_positive": 0.6923,
+      "margin_t_p10_p50_p90": [
+        -14.73707090626585,
+        9.33235276403326,
+        32.15778117079221
+      ],
+      "margin_acre_p10_p50_p90": [
+        -6.217715055704946,
+        3.847500571727174,
+        14.04203904872918
+      ]
+    },
+    "erw": {
+      "p_margin_positive": 0.8558,
+      "margin_t_p10_p50_p90": [
+        -14.820881047670202,
+        73.49390569632175,
+        160.76444906045666
+      ],
+      "margin_acre_p10_p50_p90": [
+        -20.728005416109177,
+        105.33530856597507,
+        277.49253006719204
+      ]
+    },
+    "arr": {
+      "p_margin_positive": 0.99585,
+      "margin_t_p10_p50_p90": [
+        4.1023106322045635,
+        7.644979305745137,
+        11.65577488596168
+      ],
+      "margin_acre_p10_p50_p90": [
+        11.558739355646031,
+        40.27951771042507,
+        94.72104571362483
+      ],
+      "farmer_inr_acre_p10_p50_p90": [
+        1839.565058945961,
+        4903.751449713422,
+        10687.944879185508
+      ]
+    },
+    "soil": {
+      "p_margin_positive": 0.9004,
+      "margin_t_p10_p50_p90": [
+        0.006424060300805125,
+        5.843783841204943,
+        13.21203764545024
+      ],
+      "margin_acre_p10_p50_p90": [
+        0.0037004298826796385,
+        4.4104650200287345,
+        11.214227516897422
+      ],
+      "farmer_inr_acre_p10_p50_p90": [
+        565.9041555935205,
+        1017.8912029932442,
+        1721.5797967323747
+      ]
+    }
+  },
+  "tornado": {
+    "biochar": [
+      {
+        "input": "cost_biochar",
+        "label": "Delivery cost incl. feedstock",
+        "low": 13.508225248376192,
+        "high": -13.883453727497752,
+        "swing": 27.391678975873944,
+        "base": 2.626599353850926
+      },
+      {
+        "input": "price_biochar",
+        "label": "Credit price",
+        "low": -2.626599353850926,
+        "high": 15.759596123105556,
+        "swing": 18.38619547695648,
+        "base": 2.626599353850926
+      },
+      {
+        "input": "stalk_ha",
+        "label": "Cotton stalk available",
+        "low": 2.008575976474238,
+        "high": 4.635175330325164,
+        "swing": 2.626599353850926,
+        "base": 2.626599353850926
+      },
+      {
+        "input": "yield_biochar",
+        "label": "Biochar yield from stalk",
+        "low": 2.0487474960037226,
+        "high": 3.1519192246211114,
+        "swing": 1.1031717286173888,
+        "base": 2.626599353850926
+      },
+      {
+        "input": "carbon_biochar",
+        "label": "Carbon content of biochar",
+        "low": 2.333921140136109,
+        "high": 3.0018278329724883,
+        "swing": 0.6679066928363793,
+        "base": 2.626599353850926
+      },
+      {
+        "input": "perm_biochar",
+        "label": "Share of carbon credited as durable",
+        "low": 2.317587665162582,
+        "high": 2.781105198195099,
+        "swing": 0.4635175330325172,
+        "base": 2.626599353850926
+      }
+    ],
+    "soil": [
+      {
+        "input": "price_soil",
+        "label": "Credit price",
+        "low": 1.0600000000000005,
+        "high": 15.200000000000003,
+        "swing": 14.140000000000002,
+        "base": 3.686
+      },
+      {
+        "input": "removal_soil",
+        "label": "Gross removal (regen-ag)",
+        "low": -2.2479999999999998,
+        "high": 7.900000000000002,
+        "swing": 10.148000000000001,
+        "base": 3.686
+      },
+      {
+        "input": "farmer_share",
+        "label": "Farmer share of credit revenue (ARR and soil)",
+        "low": 7.160399999999999,
+        "high": -1.5256000000000007,
+        "swing": 8.686,
+        "base": 3.686
+      },
+      {
+        "input": "ded_soil",
+        "label": "Buffer and uncertainty deduction",
+        "low": 4.771750000000001,
+        "high": 2.60025,
+        "swing": 2.171500000000001,
+        "base": 3.686
+      },
+      {
+        "input": "mrv_acre",
+        "label": "MRV cost (ARR and soil)",
+        "low": 4.686,
+        "high": 2.686,
+        "swing": 2.0,
+        "base": 3.686
+      }
+    ]
+  }
+}
